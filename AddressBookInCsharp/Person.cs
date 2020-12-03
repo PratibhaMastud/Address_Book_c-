@@ -60,17 +60,6 @@ public class Person
 	{
 		this.state = state;
 	}
-
-	public String getZip()
-	{
-		return zip;
-	}
-
-	public void setZip(String zip)
-	{
-		this.zip = zip;
-	}
-
 	public String getPhoneNumber()
 	{
 		return phoneNumber;
@@ -93,7 +82,7 @@ public class Person
 
 	public override string ToString()
 	{
-		return string.Format("[{0}, {1}, {2}, {3}, {4}]", firstName, "  ", lastName, "  ", address, "  ", city, "  ", state, "  ", zip, "  ", phoneNumber, "  ", email);
+		return string.Format("[{0},{1},{2},{3},{4},{5},{6}]", firstName,"  ", lastName,"  ", address,"  ", city,"  ", state,"  ", phoneNumber,"  ", email);
 	}
 
 }

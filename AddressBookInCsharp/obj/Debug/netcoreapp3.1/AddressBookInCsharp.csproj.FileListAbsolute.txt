@@ -2,3 +2,12 @@ C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Deb
 C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.AssemblyInfoInputs.cache
 C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.AssemblyInfo.cs
 C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.csproj.CoreCompileInputs.cache
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.exe
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.deps.json
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.runtimeconfig.json
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.runtimeconfig.dev.json
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.dll
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\bin\Debug\netcoreapp3.1\AddressBookInCsharp.pdb
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.dll
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.pdb
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.genruntimeconfig.cache

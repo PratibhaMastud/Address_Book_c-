@@ -17,15 +17,38 @@ public class AddressBookServices
 			person.setCity(Console.ReadLine());
 			Console.WriteLine("Enter state  : ");
 			person.setState(Console.ReadLine());
-			Console.WriteLine("Enter Zip  : ");
-			person.setZip(Console.ReadLine());
-			Console.WriteLine("Enter Mobile Number  : ");
+			Console.WriteLine("Enter Mobile Number:");
 			person.setPhoneNumber(Console.ReadLine());
 			Console.WriteLine("Enter Email Id : ");
 			person.setEmail(Console.ReadLine());
 
 			Console.WriteLine(person);
 		}
+
+		// EDIT CONTACT DETAIL BY PERSON NAME
+		public void editContact(String firstName, String lastName)
+		{
+		if (firstName.Equals(person.getFirstName()) && lastName.Equals(person.getLastName()))
+		{
+			Console.WriteLine("Enter address : ");
+			person.setAddress(Console.ReadLine());
+			Console.WriteLine("Enter City  : ");
+			person.setCity(Console.ReadLine());
+			Console.WriteLine("Enter state  : ");
+			person.setState(Console.ReadLine());
+			Console.WriteLine("Enter Mobile Number  : ");
+			person.setPhoneNumber(Console.ReadLine());
+			Console.WriteLine("Enter Email Id : ");
+			person.setEmail(Console.ReadLine());
+			Console.WriteLine("Contact updated successfully\n");
+		}
+		else
+		{
+			Console.WriteLine("name not found");
+		}
+
+		Console.WriteLine(person);
 	}
+}
 
 
