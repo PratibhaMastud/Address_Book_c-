@@ -1,0 +1,4 @@
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.csprojAssemblyReference.cache
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.AssemblyInfoInputs.cache
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.AssemblyInfo.cs
+C:\Users\prattii\Desktop\AddBook\AddressBookInCsharp\AddressBookInCsharp\obj\Debug\netcoreapp3.1\AddressBookInCsharp.csproj.CoreCompileInputs.cache
