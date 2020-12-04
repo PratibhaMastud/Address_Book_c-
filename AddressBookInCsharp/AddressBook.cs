@@ -7,37 +7,108 @@ namespace AddressBookInCsharp
 {
     public class AddressBook {
 
-		Person person = new Person();
-		public void addContact()
-		{
-			Console.WriteLine("Enter FirstName : ");
-			person.setFirstName(Console.ReadLine());
-			Console.WriteLine("Enter LastName : ");
-			person.setLastName(Console.ReadLine());
-			Console.WriteLine("Enter City  : ");
-			person.setCity(Console.ReadLine());
-			Console.WriteLine("Enter state  : ");
-			person.setState(Console.ReadLine());
-			Console.WriteLine("Enter Mobile Number:");
-			person.setPhoneNumber(Console.ReadLine());
-			Console.WriteLine("Enter Email Id : ");
-			person.setEmail(Console.ReadLine());
 
-			Console.WriteLine(person);
-		}
-		public void deleteContact(String firstName, String lastName)
-		{
-			if (firstName.Equals(person.getFirstName()) && lastName.Equals(person.getLastName()))
-			{
-				person = null;
-				Console.WriteLine("Contact deleted successfully\n");
-			}
-			else
-			{
-				Console.WriteLine("name does not exist");
-			}
+        List<Person> adressBookList = new List<Person>();
+        public void addPerson()
+        {
+            Console.WriteLine("Enter firstName:");
+            var firstName = Console.ReadLine();
 
-			Console.WriteLine(person);
-		}
-	}
+            Console.WriteLine("Enter lastName:");
+            var lastName = Console.ReadLine();
+
+            Console.WriteLine("Enter city:");
+            var city = Console.ReadLine();
+
+            Console.WriteLine("Enter state:");
+            var state = Console.ReadLine();
+
+            Console.WriteLine("Enter email:");
+            var email = Console.ReadLine();
+
+            Console.WriteLine("Enter phoneNumber:");
+            var phoneNumber = Console.ReadLine();
+
+
+            Person person = new Person(firstName, lastName, city, state, email, phoneNumber);
+            adressBookList.Add(person);
+        }
+
+        public void displayPerson()
+        {
+            Console.WriteLine("\nEntered Person Details is:");
+            foreach (var person in adressBookList)
+            {
+                Console.WriteLine("FirstName: {0}, LastName: {1}, city: {2}, state: {3}, email: {4}, phoneNumber: {5}", person.FirstName, person.LastName, person.city, person.state, person.email, person.phoneNumber);
+            }
+
+        }
+        public void editPerson()
+        {
+
+            Console.WriteLine("\n enter First name to edit details:");
+            string name = Console.ReadLine();
+            foreach (var person in adressBookList)
+            {
+                if (name.Equals(person.FirstName))
+                {
+
+                    Console.WriteLine("Choose one of the following options: ");
+                    Console.WriteLine("#1 Phone Number");
+                    Console.WriteLine("#2 Email");
+                    Console.WriteLine("#3 City");
+                    Console.WriteLine("#4 State");
+                    Console.WriteLine("#5 Quit");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+
+                    switch (choice)
+                    {
+                        case 1:
+                            Console.WriteLine("enter new Mobile number:");
+                            string mobileNo = Console.ReadLine();
+                            person.setPhoneNumber(mobileNo);
+                            Console.WriteLine("mobile no. is updated\n");
+                            break;
+                        case 2:
+                            Console.WriteLine("enter new Email-id:");
+                            String email = Console.ReadLine();
+                            person.setEmail(email);
+                            Console.WriteLine("Email-id is updated\n");
+                            break;
+                        case 3:
+                            Console.WriteLine("enter your city");
+                            String city = Console.ReadLine();
+                            person.setCity(city);
+                            break;
+                        case 4:
+                            Console.WriteLine("enter your state");
+                            String state = Console.ReadLine();
+                            person.setState(state);
+                            person.setState(state);
+                            Console.WriteLine("Address is updated\n");
+                            break;
+                        default:
+                            Console.WriteLine("please enter right choice");
+                            break;
+                    }
+                }
+                else
+                    Console.WriteLine("Person is not registered");
+            }
+        }
+
+        public void deletePerson()
+        {
+
+            Console.WriteLine("Enter firstName of the user you want to remove");
+            var firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter lastname of the user you want to remove");
+            var lastName = Console.ReadLine();
+
+            adressBookList.RemoveAll(item => item.FirstName == firstName && item.LastName == lastName);
+
+
+        }
+    }
 }

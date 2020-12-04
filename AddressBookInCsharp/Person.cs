@@ -6,44 +6,40 @@ namespace AddressBookInCsharp
 {
 	class Person
 	{
-		public String firstName;
-		public String lastName;
-		public String address;
-		public String city;
-		public String state;
-		public String zip;
-		public String phoneNumber;
-		public String email;
+		public string FirstName;
+		public string LastName;
+		public string city;
+		public string state;
+		public string email;
+		public string phoneNumber;
 
-		// SETTER GETTER METHODS
+		public Person(string firstName, string lastName, string city, string state, string email, string phoneNumber)
+		{
+			this.FirstName = firstName;
+			this.LastName = lastName;
+			this.city = city;
+			this.state = state;
+			this.email = email;
+			this.phoneNumber = phoneNumber;
+		}
 		public String getFirstName()
 		{
-			return firstName;
+			return FirstName;
 		}
 
 		public void setFirstName(String firstName)
 		{
-			this.firstName = firstName;
+			this.FirstName = firstName;
 		}
 
 		public String getLastName()
 		{
-			return lastName;
+			return LastName;
 		}
 
 		public void setLastName(String lastName)
 		{
-			this.lastName = lastName;
-		}
-
-		public String getAddress()
-		{
-			return address;
-		}
-
-		public void setAddress(String address)
-		{
-			this.address = address;
+			this.LastName = lastName;
 		}
 
 		public String getCity()
@@ -65,17 +61,6 @@ namespace AddressBookInCsharp
 		{
 			this.state = state;
 		}
-
-		public String getZip()
-		{
-			return zip;
-		}
-
-		public void setZip(String zip)
-		{
-			this.zip = zip;
-		}
-
 		public String getPhoneNumber()
 		{
 			return phoneNumber;
@@ -95,7 +80,5 @@ namespace AddressBookInCsharp
 		{
 			this.email = email;
 		}
-
 	}
 }
-
