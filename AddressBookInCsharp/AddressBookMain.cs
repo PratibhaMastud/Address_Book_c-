@@ -1,21 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class AddressBookMain
+namespace AddressBookInCsharp
 {
-	public static void Main(String[] args)
+	class AddressBookMain
 	{
-		AddressBookServices addressBookServices = new AddressBookServices();
-		Console.WriteLine("            Welcome to Address Book          ");
-		Console.WriteLine("---------------------------------------------");
-		addressBookServices.addContact();
-		Console.WriteLine("Enter first name and last name of the person to for remove the contact: ");
-		String firstName = Console.ReadLine();
-		String lastName = Console.ReadLine();
-		addressBookServices.deleteContactDetail(firstName, lastName);
-
+		public static void Main(String[] args)
+		{
+			AddressBook addressBookServices = new AddressBook();
+			Console.WriteLine("            Welcome to Address Book          ");
+			Console.WriteLine("---------------------------------------------");
+			addressBookServices.addContact();
+			Console.WriteLine("Enter first name and last name of the person to remove the contact: ");
+			String firstName = Console.ReadLine();
+			String lastName = Console.ReadLine();
+		}
 	}
-
 }
-
-
 

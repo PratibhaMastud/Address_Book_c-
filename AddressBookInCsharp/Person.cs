@@ -1,93 +1,101 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Person
+namespace AddressBookInCsharp
 {
-	public String firstName;
-	public String lastName;
-	public String address;
-	public String city;
-	public String state;
-	public String zip;
-	public String phoneNumber;
-	public String email;
-
-	public String getFirstName()
+	class Person
 	{
-		return firstName;
-	}
+		public String firstName;
+		public String lastName;
+		public String address;
+		public String city;
+		public String state;
+		public String zip;
+		public String phoneNumber;
+		public String email;
 
-	public void setFirstName(String firstName)
-	{
-		this.firstName = firstName;
-	}
+		// SETTER GETTER METHODS
+		public String getFirstName()
+		{
+			return firstName;
+		}
 
-	public String getLastName()
-	{
-		return lastName;
-	}
+		public void setFirstName(String firstName)
+		{
+			this.firstName = firstName;
+		}
 
-	public void setLastName(String lastName)
-	{
-		this.lastName = lastName;
-	}
+		public String getLastName()
+		{
+			return lastName;
+		}
 
-	public String getAddress()
-	{
-		return address;
-	}
+		public void setLastName(String lastName)
+		{
+			this.lastName = lastName;
+		}
 
-	public void setAddress(String address)
-	{
-		this.address = address;
-	}
+		public String getAddress()
+		{
+			return address;
+		}
 
-	public String getCity()
-	{
-		return city;
-	}
+		public void setAddress(String address)
+		{
+			this.address = address;
+		}
 
-	public void setCity(String city)
-	{
-		this.city = city;
-	}
+		public String getCity()
+		{
+			return city;
+		}
 
-	public String getState()
-	{
-		return state;
-	}
+		public void setCity(String city)
+		{
+			this.city = city;
+		}
 
-	public void setState(String state)
-	{
-		this.state = state;
-	}
-	public String getPhoneNumber()
-	{
-		return phoneNumber;
-	}
+		public String getState()
+		{
+			return state;
+		}
 
-	public void setPhoneNumber(String phoneNumber)
-	{
-		this.phoneNumber = phoneNumber;
-	}
+		public void setState(String state)
+		{
+			this.state = state;
+		}
 
-	public String getEmail()
-	{
-		return email;
-	}
+		public String getZip()
+		{
+			return zip;
+		}
 
-	public void setEmail(String email)
-	{
-		this.email = email;
-	}
+		public void setZip(String zip)
+		{
+			this.zip = zip;
+		}
 
-	public override string ToString()
-	{
-		return string.Format("[{0},{1},{2},{3},{4},{5},{6}]", firstName,"  ", lastName,"  ", address,"  ", city,"  ", state,"  ", phoneNumber,"  ", email);
-	}
+		public String getPhoneNumber()
+		{
+			return phoneNumber;
+		}
 
+		public void setPhoneNumber(String phoneNumber)
+		{
+			this.phoneNumber = phoneNumber;
+		}
+
+		public String getEmail()
+		{
+			return email;
+		}
+
+		public void setEmail(String email)
+		{
+			this.email = email;
+		}
+
+	}
 }
-
-
-
-
 
