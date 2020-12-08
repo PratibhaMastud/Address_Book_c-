@@ -11,9 +11,8 @@ namespace AddressBookInCsharp
 		public string city;
 		public string state;
 		public string email;
-		public string phoneNumber;
-
-		public Person(string firstName, string lastName, string city, string state, string email, string phoneNumber)
+		public long phoneNumber;
+		public Person(string firstName, string lastName, string city, string state, string email, long phoneNumber)
 		{
 			this.FirstName = firstName;
 			this.LastName = lastName;
@@ -61,12 +60,12 @@ namespace AddressBookInCsharp
 		{
 			this.state = state;
 		}
-		public String getPhoneNumber()
+		public long getPhoneNumber()
 		{
 			return phoneNumber;
 		}
 
-		public void setPhoneNumber(String phoneNumber)
+		public void setPhoneNumber(long phoneNumber)
 		{
 			this.phoneNumber = phoneNumber;
 		}
