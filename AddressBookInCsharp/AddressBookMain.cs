@@ -6,6 +6,7 @@ namespace AddressBookInCsharp
 {
     class AddressBookMain
     {
+        AddressBook obj = new AddressBook();
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome in Address book System");
@@ -92,7 +93,7 @@ namespace AddressBookInCsharp
             
             static void addContactBook(AddressBook addressBook)
             {
-                  Console.WriteLine("Enter First Name : ");
+                    Console.WriteLine("Enter First Name : ");
                     string firstName = Console.ReadLine();
                     Console.WriteLine("Enter Last Name : ");
                     string lastName = Console.ReadLine();
@@ -108,7 +109,6 @@ namespace AddressBookInCsharp
                     string email = Console.ReadLine();
                     addressBook.AddContact(firstName, lastName, address, city, state, phoneNumber, email);
             }
-            
         }
     }
 }
